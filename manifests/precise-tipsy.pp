@@ -32,7 +32,7 @@ package { "sqlite3":
   ensure => latest,
 }
 
-package { "pysqlite": 
+package { "flask": 
   ensure => latest,
   provider => pip,
   require => Package['python-pip'],

@@ -5,7 +5,7 @@ Vagrant::Config.run do |config|
 
   config.vm.box = "precise"
   config.vm.box_url = "http://dl.dropbox.com/u/1537815/precise64.box"
-  # config.vm.forward_port "http", 80, 80
+  config.vm.forward_port 5000, 5000, :auto
   # config.vm.share_folder "v-data", "/vagrant_data", "../data"
 
   config.vm.provision :puppet do |puppet|
